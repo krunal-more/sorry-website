@@ -1,0 +1,51 @@
+/* HOME PAGE */
+.home-bg {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff77c3, #c27bff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-card {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.home-title {
+    color: #ff3e9e;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.home-sub {
+    color: #444;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.home-btn {
+    background: linear-gradient(135deg, #ff3e9e, #c27bff);
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}

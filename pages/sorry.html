@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Sorry 💗</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff93c9, #c66bff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .teddy-box {
+            text-align: center;
+            animation: fade 1s ease;
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .teddy {
+            font-size: 120px;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .cute-text {
+            margin-top: 20px;
+            font-size: 35px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 0 0 15px rgba(255,255,255,0.8);
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 35px;
+            animation: floatUp 5s infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-600px); opacity: 0; }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="teddy-box">
+    <div class="teddy">🧸💗</div>
+    <div class="cute-text">I’m still sorry... please smile? 🥺💞</div>
+</div>
+
+<script>
+    function hearts() {
+        for (let i = 0; i < 20; i++) {
+            let h = document.createElement("div");
+            h.innerHTML = (Math.random() > 0.5) ? "❤️" : "💞";
+            h.classList.add("heart");
+            h.style.left = Math.random() * 100 + "%";
+            h.style.animationDuration = (3 + Math.random() * 3) + "s";
+            document.body.appendChild(h);
+        }
+    }
+    hearts();
+</script>
+
+</body>
+</html>
