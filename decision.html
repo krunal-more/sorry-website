@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>I’m Sorry 💗</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{background:linear-gradient(135deg,#ff73b3,#c66bff);height:100vh;display:flex;justify-content:center;align-items:center;overflow:hidden;}
+.sorry-box{text-align:center;background:rgba(255,255,255,0.2);padding:40px;border-radius:25px;backdrop-filter:blur(10px);box-shadow:0 0 25px rgba(255,255,255,0.3);animation:pop 1s ease;}
+@keyframes pop{0%{transform:scale(0.7);opacity:0;}100%{transform:scale(1);opacity:1;}}
+.sorry-title{color:white;font-size:45px;font-weight:bold;text-shadow:0 0 15px rgba(255,255,255,0.7);}
+.btn-group{margin-top:30px;display:flex;gap:20px;justify-content:center;}
+.decision-btn{padding:12px 20px;font-size:18px;border-radius:15px;border:none;cursor:pointer;transition:.3s;color:white;}
+.ok-btn{background:linear-gradient(135deg,#66ff99,#00cc66);box-shadow:0 0 15px rgba(0,255,150,0.7);}
+.not-btn{background:linear-gradient(135deg,#ff4d88,#ff1a66);box-shadow:0 0 15px rgba(255,80,120,0.8);}
+.decision-btn:hover{transform:scale(1.1);}
+</style>
+</head>
+<body>
+<div class="sorry-box">
+    <div class="sorry-title">I’m really sorry 💗</div>
+    <p style="color:white;font-size:18px;">Kya tum mujhe maaf karogi..? 🥺💞</p>
+    <div class="btn-group">
+        <button class="decision-btn ok-btn" onclick="goSuccess()">It’s okay 💞</button>
+        <button class="decision-btn not-btn" onclick="goNotOkay()">Not okay 😔</button>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

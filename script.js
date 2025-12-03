@@ -1,0 +1,1 @@
+function goSorry(){location.href='decision.html'}function goSuccess(){location.href='pages/success.html'}function goNotOkay(){location.href='pages/sorry.html'}
